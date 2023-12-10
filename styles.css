@@ -11,7 +11,7 @@ a {
 body {
   font-family: Open Sans;
   line-height: 1.5;
-  height: 100vh;
+  min-height: 100vh;
 
   --primary-text-color: #181820;
   --secondary-text-color: #5c5c62;
@@ -34,20 +34,34 @@ h3 {
   text-transform: uppercase;
   color: white;
   margin: 5px 0;
-  padding: 0 20px;
-  background-color: #272828;
+  background: linear-gradient(
+    109.6deg,
+    rgba(0, 0, 0, 0.93) 11.2%,
+    rgb(63, 61, 61) 78.9%
+  );
   font-weight: 600;
+}
+
+h3,
+h4 {
+  padding: 5px 20px;
 }
 
 .resume {
   max-width: 900px;
   background: white;
+  margin: 0 auto 20px auto;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .resume__profile {
   display: flex;
   position: relative;
-  background-color: #272828;
+  background: linear-gradient(
+    109.6deg,
+    rgba(0, 0, 0, 0.93) 11.2%,
+    rgb(63, 61, 61) 78.9%
+  );
   color: white;
   gap: 50px;
   justify-content: space-between;
@@ -108,12 +122,15 @@ ul {
   margin: 10px 0 10px 20px;
 }
 
-.skills {
+.skills,
+.hobbies {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
-.skill__item {
+.skill__item,
+.hobbies__item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -123,20 +140,84 @@ ul {
   min-height: 90px;
   border: 2px solid gray;
   border-radius: 10px;
-  background: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.skills {
-  gap: 20px;
+.skill__item {
+  background: linear-gradient(
+    109.6deg,
+    rgb(20, 30, 48) 11.2%,
+    rgb(36, 59, 85) 91.1%
+  );
 }
-.skill__item_img {
+
+.hobbies__item:hover,
+.skill__item:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.skill__item_img,
+.hobbies__item_img {
   height: 35px;
   width: auto;
 }
 
-
-.skill__item_title {
+.skill__item_title,
+.hobbies__item_title {
   font-weight: 600;
   padding: 0 5px;
   font-size: 13px;
+  color: white;
+}
+
+.hobbies__item_title {
+  color: black;
+}
+
+.hobbies__item_img {
+  transition: 0.3s;
+  background-size: contain;
+  height: 35px;
+  width: 35px;
+}
+
+.tabble-tennis {
+  background-image: url("/assets/hobbies/table-tennis.png");
+}
+
+.hobbies__item:hover .tabble-tennis {
+  background-image: url("/assets/hobbies/table-tennis-color.png");
+}
+
+.wrestling {
+  background-image: url("/assets/hobbies/wrestling.png");
+}
+
+.hobbies__item:hover .wrestling {
+  background-image: url("/assets/hobbies/wrestling-color.png");
+}
+
+.board-games {
+  background-image: url("/assets/hobbies/board-games.png");
+}
+
+.hobbies__item:hover .board-games {
+  background-image: url("/assets/hobbies/board-games-color.png");
+}
+
+.driving {
+  background-image: url("/assets/hobbies/driving.png");
+}
+
+.hobbies__item:hover .driving {
+  background-image: url("/assets/hobbies/driving-color.png");
+}
+
+.reading {
+  background-image: url("/assets/hobbies/reading.png");
+}
+
+.hobbies__item:hover .reading {
+  background-image: url("/assets/hobbies/reading-color.png");
 }
