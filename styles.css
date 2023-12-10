@@ -5,7 +5,7 @@
 }
 
 a {
-  transition: 0, 3s;
+  transition: 0.3s;
   color: black;
   cursor: pointer;
 }
@@ -288,41 +288,41 @@ ul {
 }
 
 .tabble-tennis {
-  background-image: url("/assets/hobbies/table-tennis.png");
+  background-image: url("assets/hobbies/table-tennis.png");
 }
 
 .hobbies-item:hover .tabble-tennis {
-  background-image: url("/assets/hobbies/table-tennis-color.png");
+  background-image: url("assets/hobbies/table-tennis-color.png");
 }
 
 .wrestling {
-  background-image: url("/assets/hobbies/wrestling.png");
+  background-image: url("assets/hobbies/wrestling.png");
 }
 
 .hobbies-item:hover .wrestling {
-  background-image: url("/assets/hobbies/wrestling-color.png");
+  background-image: url("assets/hobbies/wrestling-color.png");
 }
 
 .board-games {
-  background-image: url("/assets/hobbies/board-games.png");
+  background-image: url("assets/hobbies/board-games.png");
 }
 
 .hobbies-item:hover .board-games {
-  background-image: url("/assets/hobbies/board-games-color.png");
+  background-image: url("assets/hobbies/board-games-color.png");
 }
 
 .driving {
-  background-image: url("/assets/hobbies/driving.png");
+  background-image: url("assets/hobbies/driving.png");
 }
 
 .hobbies-item:hover .driving {
-  background-image: url("/assets/hobbies/driving-color.png");
+  background-image: url("assets/hobbies/driving-color.png");
 }
 
 .reading {
-  background-image: url("/assets/hobbies/reading.png");
+  background-image: url("assets/hobbies/reading.png");
 }
 
 .hobbies-item:hover .reading {
-  background-image: url("/assets/hobbies/reading-color.png");
+  background-image: url("assets/hobbies/reading-color.png");
 }
