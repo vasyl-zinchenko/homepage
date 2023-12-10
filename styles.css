@@ -78,25 +78,33 @@ h3 {
 .container {
   display: flex;
   gap: 100px;
-  padding: 5px 20px;
+  padding: 15px 20px;
 }
 
-.education__info {
+.education__info,
+.experience__info {
   display: flex;
   gap: 20px;
 }
 
-.education__info_logo > img {
+.education__info_logo > img,
+.experience__info_logo > img {
   height: 50px;
   width: 50px;
 }
 
-.education__info_data--title {
+.education__info_title,
+.experience__info_title {
   font-size: 18px;
   font-weight: 600;
 }
 
-.education__info_data--years {
+.education__info_years,
+.experience__info_years {
   font-size: 15px;
   color: gray;
+}
+
+ul {
+  margin: 10px 0 10px 20px;
 }

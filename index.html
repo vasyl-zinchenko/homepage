@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="UTF-8" />
     <title>Résumé</title>
     <link rel="stylesheet" href="styles.css" />
-    <script
-      src="https://kit.fontawesome.com/f9dd2eb459.js"
-      crossorigin="anonymous"
-    ></script>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f9dd2eb459.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
+
   <body>
     <main>
       <div class="resume">
         <section class="resume__profile">
-          <img
-            class="resume__profile_picture"
-            src="/assets/avatar.png"
-            alt="profile photo"
-          />
+          <img class="resume__profile_picture" src="/assets/avatar.png" alt="profile photo" />
           <div class="resume__profile_header">
             <h1>Vasyl Zinchenko</h1>
             <h2>Front-End Developer</h2>
@@ -35,20 +30,17 @@
               <p>
                 <i class="fa-solid fa-location-dot"></i>
                 <a href="https://maps.app.goo.gl/53LcFjn6E6peEZXh6"></a>
-                  Kyiv, Ukraine</a
-                >
+                Kyiv, Ukraine</a>
               </p>
 
               <p>
-                <i class="fa-solid fa-phone"></i
-                ><a href="tel:+380967552251"> +38 096 75 52 251</a>
+                <i class="fa-solid fa-phone"></i><a href="tel:+380967552251"> +38 096 75 52 251</a>
               </p>
 
               <p>
                 <i class="fa-solid fa-envelope"></i>
                 <a href="mailto:vasyl.zinchenko.info@gmail.com">
-                  vasyl.zinchenko.info@gmail.com</a
-                >
+                  vasyl.zinchenko.info@gmail.com</a>
               </p>
             </div>
             <div class="resume__contact-info_social">
@@ -63,31 +55,81 @@
         <section class="resume__education education">
           <h3>Education</h3>
 
-					<div class="education__info container">
-						<div class="education__info_logo">
-							<img src="/assets/logo-wssp.png">
-						</div>
-						<div class="education__info_data">
-						<p class="education__info_data--title">Wyższa Szkoła Społeczno-Przyrodnicza im. Wincentego Pola w Lublinie</p>
-						<p class="education__info_data--faculty">Master’s Degree , Health tourismMaster’s Degree , Health tourism</p>
-						<p class="education__info_data--years">2011 - 2013</p>
-						</div>
-					</div>
+          <div class="education__info container">
+            <div class="education__info_logo">
+              <img src="/assets/logo-wssp.png">
+            </div>
+            <div class="education__info_data">
+              <p class="education__info_data--title">Wyższa Szkoła Społeczno-Przyrodnicza im. Wincentego Pola w Lublinie</p>
+              <p class="education__info_data--faculty">Master’s Degree , Health tourismMaster’s Degree , Health tourism</p>
+              <p class="education__info_data--years">2011 - 2013</p>
+            </div>
+          </div>
 
-					<div class="education__info container">
-						<div class="education__info_logo">
-							<img src="/assets/logo-dragomanov.png">
-						</div>
-						<div class="education__info_data">
-						<p class="education__info_data--title">National Pedagogical University 'M.P. Drahomanov'​, Kyiv</p>
-						<p class="education__info_data--faculty">Bachelor's degree, Social work (applied psychology)Bachelor's degree, Social work (applied psychology)</p>
-						<p class="education__info_data--years">2006 - 2011</p>
-						</div>
-					</div>
+          <div class="education__info container">
+            <div class="education__info_logo">
+              <img src="/assets/logo-dragomanov.png">
+            </div>
+            <div class="education__info_data">
+              <p class="education__info_title">National Pedagogical University 'M.P. Drahomanov'​, Kyiv</p>
+              <p class="education__info_faculty">Bachelor's degree, Social work (applied psychology)Bachelor's degree, Social work (applied psychology)</p>
+              <p class="education__info_years">2006 - 2011</p>
+            </div>
+          </div>
 
         </section>
-        <section class="resume__experience-info"></section>
+
+        <section class="resume__experience experience">
+          <h3>Experience</h3>
+          <div class="experience__info container">
+            <div class="experience__info_logo">
+              <img src="/assets/dzencode_logo.jpeg">
+            </div>
+            <div class="experience__info_data">
+              <p class="experience__info_title">Vue.js Developer</p>
+              <p class="experience__info_company">dZENcode</p>
+              <p class="experience__info_years">Dec 2022 - May 2023</p>
+
+                <ul class="experience__info_description">
+                  <li>Migrated a table component, implementing tabs and query
+                    parameters;</li>
+                  <li>Developed CRUD for improved user interaction and data
+                    manipulation within the CRM system;</li>
+                  <li>Optimized the component to meet specific requirements,
+                    leveraging the latest library versions;</li>
+                </ul>
+								<p class="experience__info_skills"><strong>Skills:</strong> Vuetify · Pinia · Vue 3 Composition API · Vue.js · TypeScript</p>
+            </div>
+          </div>
+
+          <div class="experience__info container">
+            <div class="experience__info_logo">
+              <img src="/assets/firelink_media_logo.jpeg">
+            </div>
+            <div class="experience__info_data">
+              <p class="experience__info_title">Website Administrator</p>
+              <p class="experience__info_company">Firelink.Media</p>
+              <p class="experience__info_years">Feb 2020 - Apr 2022</p>
+
+                <ul class="experience__info_description">
+                  <li>Website monitoring;</li>
+                  <li>Tracking changes on sites;</li>
+                  <li>Updating the content of sites;</li>
+                  <li>Setting tasks to eliminate errors;</li>
+                  <li>Parsing data via A-parser, Screaming Frog;</li>
+                  <li>Collection of SEO metrics by API (Ahrefs);</li>
+                  <li>Making adjustments to sites: HTML, CSS, elementary JS;</li>
+                  <li>Data entry in Excel, Google sheets;</li>
+                  <li>Using regular expressions;</li>
+                </ul>
+								<p class="experience__info_skills"><strong>Skills:</strong> Teamwork · Parsing · Data Entry · Google Sheets · Cascading Style Sheets (CSS) · HTML · Search Engine Optimization (SEO)</p>
+            </div>
+          </div>
+
+        </section>
+
       </div>
     </main>
   </body>
+
 </html>
