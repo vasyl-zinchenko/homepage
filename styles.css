@@ -12,13 +12,6 @@ body {
   font-family: Open Sans;
   line-height: 1.5;
   min-height: 100vh;
-
-  --primary-text-color: #181820;
-  --secondary-text-color: #5c5c62;
-  --durability-text-color: #6a737d9c;
-  --icon-color: #6a737d;
-  --border-color: #ff9a0045;
-  --text-decoration-color: #ff9a00;
 }
 
 a {
@@ -40,11 +33,57 @@ h3 {
     rgb(63, 61, 61) 78.9%
   );
   font-weight: 600;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 14px;
 }
 
 h3,
 h4 {
   padding: 5px 20px;
+}
+
+h4 {
+  font-size: 13px;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+}
+
+hr {
+  display: block;
+  height: 5px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 10px auto;
+  width: 95%;
+}
+
+.container {
+  display: flex;
+  gap: 100px;
+  padding: 15px 20px;
 }
 
 .resume {
@@ -72,27 +111,60 @@ h4 {
 .resume__profile_header {
   background-color: rgb(62, 51, 6);
   position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
   width: 100%;
   left: 0;
   z-index: 0;
   text-align: left;
-  padding: 10px 0 10px 300px;
+  padding: 10px 0 10px 160px;
+}
+
+@media (min-width: 768px) {
+  .resume__profile_header {
+    padding: 20px 0 20px 300px;
+  }
 }
 
 .resume__profile_picture {
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
   z-index: 2;
 }
 
-.resume__contact {
+@media (min-width: 768px) {
+  .resume__profile_picture {
+    height: 200px;
+    width: 200px;
+  }
 }
 
-.container {
+.contact-link {
   display: flex;
-  gap: 100px;
-  padding: 15px 20px;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .contact-link {
+    font-size: 16px;
+  }
+}
+
+.resume__contact_container {
+  flex-direction: column;
+  gap: 0;
+  line-height: 2;
+}
+
+@media (min-width: 768px) {
+  .resume__contact_container {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+  }
 }
 
 .education,
@@ -108,18 +180,24 @@ h4 {
 
 .education__title,
 .experience__title {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
+}
+
+.education__faculty,
+.experience__company {
+  font-size: 14px;
 }
 
 .education__years,
 .experience__years {
-  font-size: 15px;
+  font-size: 13px;
   color: gray;
 }
 
 ul {
   margin: 10px 0 10px 20px;
+  font-size: 14px;
 }
 
 .skills,
@@ -127,6 +205,36 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  font-size: 14px;
+}
+
+.experience__skills {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .education__title,
+  .experience__title {
+    font-size: 18px;
+  }
+
+  .education__faculty,
+  .experience__company {
+    font-size: 16px;
+  }
+
+  .education__years,
+  .experience__years {
+    font-size: 15px;
+  }
+
+  ul {
+    font-size: 16px;
+  }
+
+  .experience__skills {
+    font-size: 16px;
+  }
 }
 
 .skill__item,
