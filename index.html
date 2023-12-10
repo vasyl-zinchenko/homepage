@@ -1,186 +1,264 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="UTF-8" />
     <title>Résumé</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/f9dd2eb459.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
+
   <body>
     <main>
       <div class="resume">
-        <div class="container">
-          <div class="resume__block">
-            <h1 class="contact-info__header">Bulka</h1>
-            <h3 class="contact-info__sub-header">Senior Hooman Manager</h3>
+        <section class="resume__profile">
+          <img class="resume__profile_picture" src="/assets/avatar.png" alt="profile photo" />
+          <div class="resume__profile_header">
+            <h1>Vasyl Zinchenko</h1>
+            <h2>Front-End Developer</h2>
+          </div>
+        </section>
 
-            <div class="contact_info_container fh">
-              <div class="contact-info__block">
-                <a href="" rel="author" class="contact-info__item">
-                  <div class="contact-info__item-icon-wrapper">
-                    <svg
-                      class="contact-info__item-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 384 512"
-                    >
-                      <path
-                        d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192
-        0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535
-        13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817
-        80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <span>Lviv, Ukraine</span>
-                </a>
-
-                <a
-                  href="https://ua.linkedin.com/company/binary-studio_241166"
-                  rel="author"
-                  class="contact-info__item"
-                >
-                  <div class="contact-info__item-icon-wrapper">
-                    <svg
-                      class="contact-info__item-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 448 512"
-                    >
-                      <path
-                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9
-        480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4
-        416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96
-        102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1
-        243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9
-        54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2
-        0 79.7 44.3 79.7 101.9V416z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <span>binary-studio</span>
-                </a>
+        <section class="resume__contact">
+          <h3>Contact</h3>
+          <div class="resume__contact_container container">
+            <div class="resume__contact_main">
+              <div class="contact-link">
+                <i class="fa-solid fa-location-dot"></i>
+                <a href="https://maps.app.goo.gl/53LcFjn6E6peEZXh6">Kyiv, Ukraine</a>
+                
               </div>
 
-              <div class="contact-info__block contact-info__block--center">
-                <img
-                  class="contact-info__avatar"
-                  src="assets/avatar.png"
-                  alt="Avatar"
-                />
-              </div>
+              <div class="contact-link">
+                <i class="fa-solid fa-phone"></i><a href="tel:+380967552251">+38 096 75 52 251</a>
+							</div>
 
-              <div class="contact-info__block"></div>
+              <div class="contact-link">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:vasyl.zinchenko.info@gmail.com">vasyl.zinchenko.info@gmail.com</a>
+							</div>
+            </div>
+            <div class="resume__contact_social">
+              <div class="contact-link"><i class="fa-brands fa-linkedin"></i><a href="http://www.linkedin.com/in/vasyl-zinchenko">Linkedin</a></div> </p>
+              <div class="contact-link"><i class="fa-brands fa-telegram"></i> <a href="https://t.me/Vasyl_Zinchenko">Telegram</a></div>
+              <div class="contact-link"><i class="fa-brands fa-github"></i><a href="https://github.com/vasyl-zinchenko">Github</a></div>
+              <div class="contact-link"><i class="fa-solid fa-briefcase"></i><a href="https://github.com/vasyl-zinchenko/portfolio">Portfolio</a></div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div class="container">
-          <div class="resume__block">
-            <div class="intro">
-              <div class="intro__icon-wrapper">
-                <svg
-                  class="intro__icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7
-            24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0
-            26.5 21.5 48 48 48h128c26.5 0 48-21.5
-            48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64
-            64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6
-            32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5
-            48-48V304c0-26.5-21.5-48-48-48z"
-                  ></path>
-                </svg>
-              </div>
-              <p class="intro_text">
-                Meow. I am a Binary Studio cat. Still got 7 lives. Work in IT,
-                Full Stack Evil, all I do is sleep and try to help out hoomans
-                with their projects whenever they need me.
-              </p>
+        <section class="resume__education education">
+          <h3>Education</h3>
+
+          <div class="education container">
+            <div class="education__logo">
+              <img src="/assets/logo-wssp.png">
+            </div>
+            <div class="education__data">
+              <p class="education__title">Wyższa Szkoła Społeczno-Przyrodnicza im. Wincentego Pola w Lublinie</p>
+              <p class="education__faculty">Master’s Degree , Health tourismMaster’s Degree , Health tourism</p>
+              <p class="education__years">2011 - 2013</p>
             </div>
           </div>
-        </div>
 
-        <div class="container">
-          <div class="resume__block">
-            <div class="skills">
-              <h3 class="skills__header">Skills</h3>
-              <p class="skills__text">
-                Sleep, eat, more sleep, meow, mrrr, purr.
-              </p>
+					<hr>
+
+          <div class="education container">
+            <div class="education__logo">
+              <img src="/assets/logo-dragomanov.png">
+            </div>
+            <div class="education__data">
+              <p class="education__title">National Pedagogical University 'M.P. Drahomanov'​, Kyiv</p>
+              <p class="education__faculty">Bachelor's degree, Social work (applied psychology)Bachelor's degree, Social work (applied psychology)</p>
+              <p class="education__years">2006 - 2011</p>
             </div>
           </div>
-        </div>
 
-        <div class="container">
-          <div class="resume__block">
-            <div class="main-info fh">
-              <div class="experiences">
-                <h3 class="experiences__header">Experience</h3>
-                <div class="experiences__company">
-                  <div class="experiences__company-header">
-                    <span class="experiences__company-header-durability"
-                      >For whole my life</span
-                    >
-                    <h3 class="experiences__company-header-name">
-                      BinaryStudio
-                    </h3>
-                  </div>
+        </section>
 
-                  <div class="experiences__company-project">
-                    <span class="experiences__company-project-role"
-                      >Binary Studio Cat</span
-                    >
-                    <h3 class="experiences__company-project-name">
-                      Hooman project
-                    </h3>
-                    <ul class="experiences__company-project-responsibilities">
-                      <li>Supported hoomans</li>
-                      <li>Slept all the time</li>
-                      <li>Lied on the keyboard</li>
-                      <li>Watched my hoomans working</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+        <section class="resume__experience experience">
+          <h3>Experience</h3>
+          <div class="experience container">
+            <div class="experience__logo">
+              <img src="/assets/dzencode_logo.jpeg">
+            </div>
+            <div class="experience__data">
+              <p class="experience__title">Vue.js Developer</p>
+              <p class="experience__company">dZENcode</p>
+              <p class="experience__years">Dec 2022 - May 2023</p>
 
-              <div class="additional-info fv">
-                <div class="additional-info fv">
-                  <div class="additional-info__education">
-                    <h3 class="additional-info__education-header">Education</h3>
-                    <div class="additional-info__education-university">
-                      <span
-                        class="additional-info__education-university-durability"
-                        >2021</span
-                      >
-                      <h3
-                        class="additional-info__education-university-speciality"
-                      >
-                        Cat track
-                      </h3>
-                      <p class="additional-info__education-university-name">
-                        Binary Studio Academy
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="additional-info__languages">
-                    <h3 class="additional-info__languages-header">Languages</h3>
-                    <p class="additional-info__languages-item">Meow dialect</p>
-                    <p class="additional-info__languages-item">
-                      Ukrainian (understand)
-                    </p>
-                    <p class="additional-info__languages-item">
-                      English (don't understand)
-                    </p>
-                  </div>
-                </div>
-              </div>
+                <ul class="experience__description">
+                  <li>Migrated a table component, implementing tabs and query
+                    parameters;</li>
+                  <li>Developed CRUD for improved user interaction and data
+                    manipulation within the CRM system;</li>
+                  <li>Optimized the component to meet specific requirements,
+                    leveraging the latest library versions;</li>
+                </ul>
+								<p class="experience__skills"><strong>Skills:</strong> Vuetify · Pinia · Vue 3 Composition API · Vue.js · TypeScript</p>
             </div>
           </div>
-        </div>
+
+					<hr>
+
+
+          <div class="experience container">
+            <div class="experience__logo">
+              <img src="/assets/firelink_media_logo.jpeg">
+            </div>
+            <div class="experience__data">
+              <p class="experience__title">Website Administrator</p>
+              <p class="experience__company">Firelink.Media</p>
+              <p class="experience__years">Feb 2020 - Apr 2022</p>
+
+                <ul class="experience__description">
+                  <li>Website monitoring;</li>
+                  <li>Tracking changes on sites;</li>
+                  <li>Updating the content of sites;</li>
+                  <li>Setting tasks to eliminate errors;</li>
+                  <li>Parsing data via A-parser, Screaming Frog;</li>
+                  <li>Collection of SEO metrics by API (Ahrefs);</li>
+                  <li>Making adjustments to sites: HTML, CSS, elementary JS;</li>
+                  <li>Data entry in Excel, Google sheets;</li>
+                  <li>Using regular expressions;</li>
+                </ul>
+								<p class="experience__skills"><strong>Skills:</strong> Teamwork · Parsing · Data Entry · Google Sheets · Cascading Style Sheets (CSS) · HTML · Search Engine Optimization (SEO)</p>
+            </div>
+          </div>
+
+        </section>
+
+				<section class="resume__skills">
+          <h3>Skills</h3>
+					<h4>PROGRAMMING</h4>
+          <div class="resume__skills_container skills container">
+
+           <div class="skill__item">
+							<img class="skill__item_img" src="assets/skills/js.png" alt="JavaScript"/>
+							<div class="skill__item_title">JavaScript</div>
+					 </div>
+					 
+           <div class="skill__item">
+							<img class="skill__item_img" src="assets/skills/css-3.png" alt="CSS3"/>
+							<div class="skill__item_title">CSS3</div>
+					 </div>
+					 
+           <div class="skill__item">
+							<img class="skill__item_img" src="assets/skills/html.png" alt="HTML"/>
+							<div class="skill__item_title">HTML</div>
+					 </div>
+					 
+           <div class="skill__item">
+							<img class="skill__item_img" src="assets/skills/sass.png" alt="SASS"/>
+							<div class="skill__item_title">SASS</div>
+					 </div>
+					 
+           <div class="skill__item">
+							<img class="skill__item_img" src="assets/skills/typescript.png" alt="TypeScript"/>
+							<div class="skill__item_title">TypeScript</div>
+					 </div>
+					 
+           <div class="skill__item">
+							<img class="skill__item_img" src="assets/skills/vue.png" alt="Vue.js"/>
+							<div class="skill__item_title">Vue.js</div>
+					 </div>
+					 
+           <div class="skill__item">
+							<img class="skill__item_img" src="assets/skills/pinia.png" alt="Pinia"/>
+							<div class="skill__item_title">Pinia</div>
+					 </div>
+
+					  <div class="skill__item">
+							<img class="skill__item_img" src="assets/skills/vuetify-logo-light-atom.svg" alt="Vuetify"/>
+							<div class="skill__item_title">Vuetify</div>
+					 </div>
+					 
+           <div class="skill__item">
+							<img class="skill__item_img" src="assets/skills/react.png" alt="React"/>
+							<div class="skill__item_title">React</div>
+					 </div>
+					 
+           <div class="skill__item">
+							<img class="skill__item_img" src="assets/skills/redux.png" alt="Redux"/>
+							<div class="skill__item_title">Redux</div>
+					 </div>
+					 
+           <div class="skill__item">
+							<img class="skill__item_img" src="assets/skills/mui.png" alt="Material UI"/>
+							<div class="skill__item_title">Material UI</div>
+					 </div>
+					 
+           <div class="skill__item">
+							<img class="skill__item_img" src="assets/skills/express-js.png" alt="Express.js"/>
+							<div class="skill__item_title">Express.js</div>
+					 </div>
+					 
+           <div class="skill__item">
+							<img class="skill__item_img" src="assets/skills/postgreSQL.png" alt="PostgreSQL"/>
+							<div class="skill__item_title">PostgreSQL</div>
+					 </div>
+					 
+           <div class="skill__item">
+							<img class="skill__item_img" src="assets/skills/tailwind-css.png" alt="Tailwind CSS"/>
+							<div class="skill__item_title">Tailwind CSS</div>
+					 </div>
+          </div>
+
+
+						<h4>LANGUAGES</h4>
+          <div class="resume__skills_container skills container">
+					 
+           <div class="skill__item">
+							<img class="skill__item_img" src="assets/skills/english.png" alt="English language"/>
+							<div class="skill__item_title">English (B1)</div>
+					 </div>
+					 
+           <div class="skill__item">
+							<img class="skill__item_img" src="assets/skills/polish.png" alt="Polish language"/>
+							<div class="skill__item_title">Polish (B1)</div>
+					 </div>
+					 
+        </section>
+
+				<section class="resume__hobbies">
+          <h3>Hobbies</h3>
+          <div class="resume__hobbies_container hobbies container">
+
+           <div class="hobbies__item">
+							<div class="hobbies__item_img tabble-tennis"> </div>
+							<div class="hobbies__item_title ">Table tennis</div>
+					 </div>
+
+           <div class="hobbies__item">
+							<div class="hobbies__item_img wrestling"> </div>
+							<div class="hobbies__item_title ">Wrestling</div>
+					 </div>
+
+					 
+           <div class="hobbies__item">
+							<div class="hobbies__item_img board-games"> </div>
+							<div class="hobbies__item_title ">Board games</div>
+					 </div>
+
+					            <div class="hobbies__item">
+							<div class="hobbies__item_img driving"> </div>
+							<div class="hobbies__item_title ">Driving</div>
+					 </div>
+
+					 					            <div class="hobbies__item">
+							<div class="hobbies__item_img reading"> </div>
+							<div class="hobbies__item_title ">Reading</div>
+					 </div>
+					 
+					 
+        </section>
+
       </div>
     </main>
   </body>
+
 </html>
