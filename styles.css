@@ -75,8 +75,28 @@ h3 {
 .resume__contact-info {
 }
 
-.resume__contact-info_container {
+.container {
   display: flex;
   gap: 100px;
   padding: 5px 20px;
+}
+
+.education__info {
+  display: flex;
+  gap: 20px;
+}
+
+.education__info_logo > img {
+  height: 50px;
+  width: 50px;
+}
+
+.education__info_data--title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.education__info_data--years {
+  font-size: 15px;
+  color: gray;
 }
