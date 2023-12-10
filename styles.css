@@ -72,7 +72,7 @@ h3 {
   z-index: 2;
 }
 
-.resume__contact-info {
+.resume__contact {
 }
 
 .container {
@@ -81,30 +81,62 @@ h3 {
   padding: 15px 20px;
 }
 
-.education__info,
-.experience__info {
-  display: flex;
+.education,
+.experience {
   gap: 20px;
 }
 
-.education__info_logo > img,
-.experience__info_logo > img {
+.education__logo > img,
+.experience__logo > img {
   height: 50px;
   width: 50px;
 }
 
-.education__info_title,
-.experience__info_title {
+.education__title,
+.experience__title {
   font-size: 18px;
   font-weight: 600;
 }
 
-.education__info_years,
-.experience__info_years {
+.education__years,
+.experience__years {
   font-size: 15px;
   color: gray;
 }
 
 ul {
   margin: 10px 0 10px 20px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  min-width: 90px;
+  min-height: 90px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  background: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}
+
+.skills {
+  gap: 20px;
+}
+.skill__item_img {
+  height: 35px;
+  width: auto;
+}
+
+
+.skill__item_title {
+  font-weight: 600;
+  padding: 0 5px;
+  font-size: 13px;
 }
