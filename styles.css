@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  transition: 0, 3s;
+  color: black;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+a:hover {
+  color: blue;
+}
+
+h3 {
+  text-transform: uppercase;
+  color: white;
+  margin: 5px 0;
+  background: linear-gradient(
+    109.6deg,
+    rgb(0 0 0 / 93%) 11.2%,
+    rgb(63 61 61) 78.9%
+  );
+  font-weight: 600;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 14px;
+}
+
+h3,
+h4 {
+  padding: 5px 20px;
+}
+
+h4 {
+  font-size: 13px;
+}
+
+@media (width >= 768px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+}
+
+hr {
+  display: block;
+  height: 5px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 10px auto;
+  width: 95%;
+}
+
+.container {
+  display: flex;
+  gap: 100px;
+  padding: 15px 20px;
+}
+
+.resume {
+  max-width: 900px;
+  background: white;
+  margin: 0 auto 20px;
+  box-shadow: rgba(149 157 165/20%) 0 8px 24px;
+}
+
+.resume-profile {
+  display: flex;
+  position: relative;
+  background: linear-gradient(
+    109.6deg,
+    rgba(0 0 0/ 93%) 11.2%,
+    rgb(63 61 61) 78.9%
+  );
+  color: white;
+  gap: 50px;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+}
+
+.resume-profile-header {
+  background-color: rgb(62 51 6);
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 100%;
+  left: 0;
+  z-index: 0;
+  text-align: left;
+  padding: 10px 0 10px 160px;
+}
+
+@media (width >= 768px) {
+  .resume-profile-header {
+    padding: 20px 0 20px 300px;
+  }
+}
+
+.resume-profile-picture {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+@media (width >= 768px) {
+  .resume-profile-picture {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+@media (width >= 768px) {
+  .contact-link {
+    font-size: 16px;
+  }
+}
+
+.resume-contact-container {
+  flex-direction: column;
+  gap: 0;
+  line-height: 2;
+}
+
+@media (width >= 768px) {
+  .resume-contact-container {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+  }
+}
+
+.education,
+.experience {
+  gap: 20px;
+}
+
+.education-logo > img,
+.experience-logo > img {
+  height: 50px;
+  width: 50px;
+}
+
+.education-title,
+.experience-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.education-faculty,
+.experience-company {
+  font-size: 14px;
+}
+
+.education-years,
+.experience-years {
+  font-size: 13px;
+  color: gray;
+}
+
+ul {
+  margin: 10px 0 10px 20px;
+  font-size: 14px;
+}
+
+.skills,
+.hobbies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.experience-skills {
+  font-size: 14px;
+}
+
+@media (width >= 768px) {
+  .education-title,
+  .experience-title {
+    font-size: 18px;
+  }
+
+  .education-faculty,
+  .experience-company {
+    font-size: 16px;
+  }
+
+  .education-years,
+  .experience-years {
+    font-size: 15px;
+  }
+
+  ul {
+    font-size: 16px;
+  }
+
+  .experience-skills {
+    font-size: 16px;
+  }
+}
+
+.skill-item,
+.hobbies-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  min-width: 90px;
+  min-height: 90px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.skill-item {
+  background: linear-gradient(
+    109.6deg,
+    rgb(20 30 48) 11.2%,
+    rgb(36 59 85) 91.1%
+  );
+}
+
+.hobbies-item:hover,
+.skill-item:hover {
+  box-shadow: rgba(0 0 0/ 35%) 0 5px 15px;
+}
+
+.skill-item-img,
+.hobbies-item-img {
+  height: 35px;
+  width: auto;
+}
+
+.skill-item-title,
+.hobbies-item-title {
+  font-weight: 600;
+  padding: 0 5px;
+  font-size: 13px;
+  color: white;
+}
+
+.hobbies-item-title {
+  color: black;
+}
+
+.hobbies-item-img {
+  transition: 0.3s;
+  background-size: contain;
+  height: 35px;
+  width: 35px;
+}
+
+.tabble-tennis {
+  background-image: url("/assets/hobbies/table-tennis.png");
+}
+
+.hobbies-item:hover .tabble-tennis {
+  background-image: url("/assets/hobbies/table-tennis-color.png");
+}
+
+.wrestling {
+  background-image: url("/assets/hobbies/wrestling.png");
+}
+
+.hobbies-item:hover .wrestling {
+  background-image: url("/assets/hobbies/wrestling-color.png");
+}
+
+.board-games {
+  background-image: url("/assets/hobbies/board-games.png");
+}
+
+.hobbies-item:hover .board-games {
+  background-image: url("/assets/hobbies/board-games-color.png");
+}
+
+.driving {
+  background-image: url("/assets/hobbies/driving.png");
+}
+
+.hobbies-item:hover .driving {
+  background-image: url("/assets/hobbies/driving-color.png");
+}
+
+.reading {
+  background-image: url("/assets/hobbies/reading.png");
+}
+
+.hobbies-item:hover .reading {
+  background-image: url("/assets/hobbies/reading-color.png");
+}
